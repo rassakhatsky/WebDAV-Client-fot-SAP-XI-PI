@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://test.com/WebDAV" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="SI_WebDAV_SI" targetNamespace="http://test.com/WebDAV">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>c45652c7302611e3bb38000009013a16</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="75384"/>
+      <changed by="75384" on="1381242881167"/>
+    </ifw:lifeCycleInfo>
+    <ifw:runtimeVersion uri="urn:sap-com:soap:application:esr:client:710"/>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_low"/>
+    <ifw:interfacePattern p2p="false">L</ifw:interfacePattern>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="a2bda6ecc7d0310eb6ae0410358c6e38"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="SI_WebDAV_SI">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>false</ifw:isInbound>
+        <ifw:interfaceCategory>outbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState/>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="MT_WebDAV">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">MT_WebDAV</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://test.com/WebDAV</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://test.com/WebDAV</ifw:technicalNamespace>
+        <ifw:VersionID>5f47c070301711e3cf17000009013a16</ifw:VersionID>
+        <ifw:xmlNamespace>http://test.com/WebDAV</ifw:xmlNamespace>
+        <ifw:dataType name="DT_WebDAV" namespace="http://test.com/WebDAV" swcvId="1aeeef1029a711e3ab15000009013a16" uri="name=DT_WebDAV~namespace=http://test.com/WebDAV~swcvId=1aeeef1029a711e3ab15000009013a16"/>
+      </ifw:message>
+      <ifw:message name="FM_Fault">
+        <ifw:messType>ifmfaultm</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">FM_Fault</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://test.com/WebDAV</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://test.com/WebDAV</ifw:technicalNamespace>
+        <ifw:VersionID>d9559412301711e3b632000009013a16</ifw:VersionID>
+        <ifw:xmlNamespace>http://test.com/WebDAV</ifw:xmlNamespace>
+        <ifw:dataType name="ExchangeFaultData" namespace="http://test.com/WebDAV" swcvId="1aeeef1029a711e3ab15000009013a16" uri="name=ExchangeFaultData~namespace=http://test.com/WebDAV~swcvId=1aeeef1029a711e3ab15000009013a16"/>
+      </ifw:message>
+      <ifw:message name="MT_WebDAV_resp">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">MT_WebDAV_resp</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://test.com/WebDAV</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://test.com/WebDAV</ifw:technicalNamespace>
+        <ifw:VersionID>b4db8586302611e3c785000009013a16</ifw:VersionID>
+        <ifw:xmlNamespace>http://test.com/WebDAV</ifw:xmlNamespace>
+        <ifw:dataType name="DT_WebDAV_resp" namespace="http://test.com/WebDAV" swcvId="1aeeef1029a711e3ab15000009013a16" uri="name=DT_WebDAV_resp~namespace=http://test.com/WebDAV~swcvId=1aeeef1029a711e3ab15000009013a16"/>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>1aeeef1029a711e3ab15000009013a16</ifw:guid>
+        <ifw:name>TEST</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_a2bda6ecc7d0310eb6ae0410358c6e38_ifmmessif</name>
+        <namespace>http://test.com/WebDAV</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_SI_WebDAV_SI"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://test.com/WebDAV" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://test.com/WebDAV">
+      <xsd:element name="MT_WebDAV_resp" type="DT_WebDAV_resp"/>
+      <xsd:element name="MT_WebDAV" type="DT_WebDAV"/>
+      <xsd:element name="FM_Fault">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="standard" type="ExchangeFaultData"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="DT_WebDAV_resp">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" name="WebDAV">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="Message" type="DT_Message"/>
+              </xsd:sequence>
+              <xsd:attribute name="Action" type="xsd:string"/>
+              <xsd:attribute name="User" type="xsd:string"/>
+              <xsd:attribute name="Password" type="xsd:string"/>
+              <xsd:attribute name="ServerAddress" type="xsd:string"/>
+              <xsd:attribute name="ServerAddressFrom" type="xsd:string"/>
+              <xsd:attribute name="ServerAddressTo" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ExchangeLogData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="severity" type="xsd:string"/>
+          <xsd:element name="text" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="url" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="id" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ExchangeFaultData">
+        <xsd:sequence>
+          <xsd:element name="faultText" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="faultUrl" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="faultDetail" type="ExchangeLogData"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_Message">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" name="Row">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element maxOccurs="unbounded" name="Record" type="xsd:string"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_WebDAV">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" name="WebDAV">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="Message" type="DT_Message"/>
+              </xsd:sequence>
+              <xsd:attribute name="Action" type="xsd:string"/>
+              <xsd:attribute name="User" type="xsd:string"/>
+              <xsd:attribute name="Password" type="xsd:string"/>
+              <xsd:attribute name="ServerAddress" type="xsd:string"/>
+              <xsd:attribute name="ServerAddressFrom" type="xsd:string"/>
+              <xsd:attribute name="ServerAddressTo" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_WebDAV">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_WebDAV" name="MT_WebDAV"/>
+  </wsdl:message>
+  <wsdl:message name="MT_WebDAV_resp">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_WebDAV_resp" name="MT_WebDAV_resp"/>
+  </wsdl:message>
+  <wsdl:message name="FM_Fault">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:FM_Fault" name="FM_Fault"/>
+  </wsdl:message>
+  <wsdl:portType name="SI_WebDAV_SI">
+    <wsdl:documentation/>
+    <wsdl:operation name="SI_WebDAV_SI">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_SI_WebDAV_SI"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_WebDAV"/>
+      <wsdl:output message="p1:MT_WebDAV_resp"/>
+      <wsdl:fault message="p1:FM_Fault" name="FM_Fault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SI_WebDAV_SIBinding" type="p1:SI_WebDAV_SI">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SI_WebDAV_SI">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FM_Fault">
+        <soap:fault xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="FM_Fault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+<wsdl:service name="SI_WebDAV_SI_Service">
+<wsdl:port xmlns:bprf="http://test.com/WebDAV" binding="bprf:SI_WebDAV_SIBinding" name="SI_WebDAV_SI_Port">
+<soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="/"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>

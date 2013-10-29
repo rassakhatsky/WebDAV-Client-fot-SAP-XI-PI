@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TSSAP-INFO>
+<Properties>
+<Property key="j2ee.archive.name" value="WebDAV_Client.jar"/>
+</Properties>
+<AddLibs>
+<AddLib name="sardineapp" vendor="demo.sap.com"/>
+<AddLib name="WebDAV_ClientEAR" vendor="sap.com"/>
+</AddLibs>
+</TSSAP-INFO>

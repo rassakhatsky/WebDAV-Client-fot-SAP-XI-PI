@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 1.6.0_25
+Edition: 711SP06
+Implementation-Vendor-Id: Sardine.com
+Implementation-Version: 7.1222.20130111111811.0000
+Perforce-Server: perforce3710.wdf.Sardine.corp:3710
+Changelist: 124350
+Implementation-Vendor-Id: com.github.lookfirst
+
+
+Name: Sardine WEBDAV client
+project: xpi.ms
+release: NW711_06_REL
+subproject: _service
+environment: com.Sardine.aii.af.ms.svc
+envtype: psrv
+gendir: D:/depot/_build/tc/xpi.ms/NW711_~4/gen/dbg/java/sub/_service/e
+ /01
+
+Name: Sardine WEBDAV client
+component: com.Sardine.aii.af.ms.svc
+type: ServerComponent
+sub-type: PrimaryService
+provider: Sardine.com
+flavors: ServerComponent
+project: xpi.ms
+subproject: _service

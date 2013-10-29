@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: WebDAV_Client
+Bundle-SymbolicName: WebDAV_Client
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: WebDAV_Client.jar,
+ C:/Users/rassakhatsky/Desktop/eclipse/workspace/WebDAV_Client/lib/sardine-5.0.1.jar,
+ C:/Users/rassakhatsky/Downloads/httpcore-4.3-beta2.jar,
+ C:/Users/rassakhatsky/Downloads/httpclient-4.3-beta2.jar,
+ C:/Users/rassakhatsky/Downloads/slf4j-api-1.7.5.jar,
+ C:/Users/rassakhatsky/Downloads/commons-logging-1.1.3.jar,
+ C:/Users/rassakhatsky/Downloads/commons-codec-1.8.jar
+Export-Package: com.test.webdav,
+ sardineclient

@@ -10,21 +10,21 @@ import java.util.ArrayList;
 
 public class SAXHandler_4_Get extends DefaultHandler {
 
-	String tagContent;
-	WebDAV xml = new WebDAV();
-	DTMessage message = new DTMessage();
+	private String tagContent;
+	private WebDAV xml = new WebDAV();
+	private DTMessage message = new DTMessage();
 
 	//Check place
-	boolean index_MT_WebDAV_resp, index_Message, index_Row, index_Record;
+	private boolean index_MT_WebDAV_resp, index_Message, index_Row, index_Record;
 
 	//Level
-	int level_Row;
-	int level_Record;
+	private int level_Row;
+	private int level_Record;
 
 	//temp
-	ArrayList<String> records = new ArrayList<String>();
-	ArrayList<DTMessage.Row> rows = new ArrayList<DTMessage.Row>();
-	DTMessage.Row row = new DTMessage.Row();
+	private ArrayList<String> records = new ArrayList<String>();
+	private ArrayList<DTMessage.Row> rows = new ArrayList<DTMessage.Row>();
+	private DTMessage.Row row = new DTMessage.Row();
 
 	@Override
 	public void startDocument() throws SAXException {
@@ -79,7 +79,6 @@ public class SAXHandler_4_Get extends DefaultHandler {
 			level_Record += 1;
 		} else {
 			if (index_Row) {
-				//row.getRecord().addAll(new ArrayList<String>(records));
 				rows.add(new DTMessage.Row());
 				rows.get(level_Row).getRecord().addAll(new ArrayList<String>(records));
 				records.clear();

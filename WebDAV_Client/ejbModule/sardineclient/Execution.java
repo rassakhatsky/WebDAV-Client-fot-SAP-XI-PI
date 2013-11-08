@@ -12,16 +12,11 @@ import com.test.webdav.DTWebDAVResp.WebDAV;
  */
 class Execution {
 
-	public StringBuffer resultMessage;
+	private StringBuffer resultMessage;
 
 	public void createFile(WebDAV source) {
 
-		String address;
-		String addressTo;
-		String password;
-		String addressFrom;
-		String user;
-		String action;
+		String address, addressTo, password, addressFrom, user, action;
 
 		if (!(source.getServerAddress() == null)) {
 			address = source.getServerAddress();
